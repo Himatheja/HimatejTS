@@ -9,19 +9,14 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-  View,
-} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigation from './src/navigations/AppNavigation';
 
 const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ fontWeight: 'bold', fontSize: 24 }}>Welcome to TS Learning..!</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <AppNavigation />
+    </NavigationContainer>
   );
 };
 
