@@ -10,7 +10,7 @@ export type Props = {
 
 const Login: React.FC<Props> = ({ navigation }) => {
   const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [, setPassword] = useState<string>("");
 
   return (
     <View style={styles.container}>

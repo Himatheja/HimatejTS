@@ -3,10 +3,10 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export type Props = {
   title: string;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
-const CustomButton: React.FC<Props> = ({ title = "", onClick = () => {} }) => {
+const CustomButton: React.FC<Props> = ({ title = "", onClick }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity

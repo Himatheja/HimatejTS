@@ -1,15 +1,15 @@
 import React from "react";
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
 
 export type Props = {
   placeholder: string;
-  onTextChange: (text: String) => void;
+  onTextChange?: (text: string) => void;
   isSecure?: boolean;
 };
 
 const CustomTextField: React.FC<Props> = ({
   placeholder = "",
-  onTextChange = () => {},
+  onTextChange,
   isSecure = false,
 }) => {
   return (

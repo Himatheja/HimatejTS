@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 
 export type Props = {
   route: any;
-  navigation: any;
+  _navigation: any;
 };
 
-const Home: React.FC<Props> = ({ route, navigation }) => {
+const Home: React.FC<Props> = ({ route, _navigation }) => {
   const { params } = route;
   const name = params.email || "User";
   return (
